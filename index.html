@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+
+<body>
+
+    <script>
+        // تعريف مصفوفة لتخزين الأعداد العشوائية
+    var numbers = [];
+    
+    // ملء المصفوفة بالأعداد العشوائية
+    for (var i = 0; i < 10; i++) {
+    numbers.push(Math.floor(Math.random() * 10)); // توليد أعداد عشوائية بين 0 و 9
+    }
+    
+    // إعداد المتغيرات لحساب النتائج
+    var sum1 = 0;
+    var sum5 = 0;
+    
+    // حساب ناتج جمع الأعداد الزوجية وأقل من 5
+    for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+    sum1 += numbers[i]; // جمع الأعداد الزوجية
+    }
+    
+    if (numbers[i] < 5) {
+    sum5 += numbers[i]; // جمع الأعداد التي أقل من 5
+    }
+    }
+    // طباعة النتائج على الكونسول
+    console.log("  Random numbers: " + numbers);
+    console.log("   Even numbers: " + sum1);
+    console.log("   Less5   : " + sum5);
+    
+    document.WritLine("  Random numbers: " + numbers);
+    document.WritLine("   Even numbers: " +sum1 );
+    document.WritLine("    Less5 : " + sum5);
+    </script>
+    <script>
+        //  objct
+var user = {
+    name: "aya",
+    number: "0930256230",
+    age: 20,
+    email: "ahmed@example.com"
+};
+
+// طباعة الغرض كاملاً
+console.log("user:");
+console.log(user);
+
+// طباعة كل عنصر على حدا
+console.log(" the name: " + user.name);
+console.log("the age : " + user.age + " سنة");
+console.log("  email: " + user.email);
+console.log("the number :" + numbers)
+
+    </script>
+</body>
+</html>
